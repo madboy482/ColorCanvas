@@ -149,7 +149,7 @@ function App() {
               🎨
             </motion.span>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-              Color Palette Generator
+              ColorCanvas
             </h1>
           </motion.div>
           
@@ -406,7 +406,7 @@ function App() {
                   transition={{ duration: 0.5 }}
                 />
               )}
-              <PaletteDisplay palette={palette} animateItems={animateItems} />
+              <PaletteDisplay palette={palette} animateItems={animateItems} isDarkMode={isDarkMode} />
             </motion.div>
           </motion.div>
         </div>
@@ -421,7 +421,7 @@ function App() {
       >
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm opacity-70">
-            Color Palette Generator | Made with <span className="text-red-500">❤️</span> | {new Date().getFullYear()}
+            ColorCanvas | Made with <span className="text-red-500">❤️</span> | {new Date().getFullYear()}
           </p>
         </div>
       </motion.footer>
