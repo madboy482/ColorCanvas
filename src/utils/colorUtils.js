@@ -1,5 +1,5 @@
 // Convert hex to HSL for better color manipulation
-function hexToHSL(hex) {
+export function hexToHSL(hex) {
   // Convert hex to RGB first
   let r = parseInt(hex.substring(1, 3), 16) / 255;
   let g = parseInt(hex.substring(3, 5), 16) / 255;
@@ -27,7 +27,7 @@ function hexToHSL(hex) {
 }
 
 // Convert HSL to hex
-function hslToHex(h, s, l) {
+export function hslToHex(h, s, l) {
   let r, g, b;
 
   if (s === 0) {
